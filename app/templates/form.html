@@ -9,8 +9,27 @@
 </head>
 
 <body>
-  <h1>YongYong Book Store</h1>
-  <p>New page</p>
+  <h1>Yong Book Store</h1>
+  <form action="{{ url_for('register') }}" method="post">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Arraival Day</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="text" name="title"></td>
+          <td><input type="text" name="price"></td>
+          <td><input type="date" name="arrival_day"></td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+    <button onclick="location.href='URL'">Register</button>
+  </form>
 
 </body>
 

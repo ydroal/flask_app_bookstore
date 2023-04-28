@@ -1,18 +1,20 @@
 from datetime import datetime
+import pymysql
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import Column, Integer, String, DateTime
 from sqlalchemy.orm import sessionmaker
 from os import getenv
 
+pymysql.install_as_MySQLdb()
 # 環境変数の取得
 USER = getenv('USER')
-PWD = getenv('PWD')
+PWD = getenv('DB_PASSWORD')
 HOST = getenv('HOST')
 DB = getenv('DB')
 
 if not USER or not PWD or not HOST or not DB:
-    raise ValueError("Environment variables are not set. Please set USER, PWD, HOST, and DB.")
+    raise ValueError("Environment variables are not set. Please set USER, DB_PASSWORD, HOST, and DB.")
 
 engine = create_engine(f'mysql://{USER}:{PWD}@{HOST}/{DB}')
 

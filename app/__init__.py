@@ -7,7 +7,7 @@ app = Flask(__name__)
 # Flaskアプリの初期化が完了するまで待ってからインポート
 from app import main
 
-db.create_books_table()
+
 
 
 
