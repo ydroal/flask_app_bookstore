@@ -1,0 +1,89 @@
+body {
+  background-color: #e4ddd7;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  color: #526b58;
+ 
+  font-size: 3.2rem;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  display: inline-block;
+  color: #6e8070;
+  font-weight: normal;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #6e8070;
+  padding: 0 15px 10px 15px;
+  margin-bottom: 50px;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  padding: 0 15px;
+  text-align: center; 
+}
+.table-container {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
+}
+
+table {
+  width: 100%;
+  margin: 0 auto;
+  border-collapse: collapse; 
+  border-spacing: 0;
+  color: #6e8070;
+  font-weight: normal;
+}
+
+th {
+  background-color: #fff2e9;
+  height: 2.5rem;
+  font-weight: normal;
+  text-align: left;
+  padding: 8px 20px;
+}
+
+th:nth-child(1) {
+  width: 50%; /* Title列の幅 */
+}
+
+th:nth-child(2) {
+  width: 25%; /* Price列の幅 */
+}
+
+th:nth-child(3) {
+  width: 25%; /* Arrival Day列の幅 */
+}
+
+tr {
+  height: 2.5rem;
+}
+
+td {
+  padding: 8px 20px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  bottom: auto;
+  background-color: #ff7c4c;
+  border-radius: 10px;
+  color: #fff2e9;
+  padding: 8px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 20px 2px; 
+  cursor: pointer;
+}

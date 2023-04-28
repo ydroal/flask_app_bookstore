@@ -5,35 +5,42 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Store</title>
+  <link rel="stylesheet" href="https://unpkg.com/ress@4.0.0/dist/ress.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;900&display=swap" rel="stylesheet">
+  <title>Yong Book Store</title>
 </head>
 
 <body>
-  <h1>Yong Book Store</h1>
-  <h2>New book releases of this month</h2>
-  {% if not books %}
-  <p>There is no new book release information for this month yet.</p>
-  {% else %}
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Price</th>
-        <th>Arrival Day</th>
-      </tr>
-    </thead>
-    {% for book in books %}
-    <tbody>
-      <tr>
-        <td>{{ book.title}}</td>
-        <td>{{ book.price}}$</td>
-        <td>{{ book.arrival_day}}</td>
-      </tr>
-    </tbody>
-    {% endfor %}
-  </table>
-  {% endif %}
-  <a href="{{ url_for('form') }}">Edit</a>
+  <div class="container">
+    <h1>YONG BOOK STORE</h1>
+    <h2>New book releases of this month</h2>
+    {% if not books %}
+    <p>There is no new book release information for this month yet.</p>
+    {% else %}
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Price</th>
+            <th>Arrival Day</th>
+          </tr>
+        </thead>
+        {% for book in books %}
+        <tbody>
+          <tr>
+            <td>{{ book.title}}</td>
+            <td>{{ book.price}}$</td>
+            <td>{{ book.arrival_day}}</td>
+          </tr>
+        </tbody>
+        {% endfor %}
+      </table>
+      {% endif %}
+      <button class="button" onclick="location.href='{{ url_for('form') }}'">Edit</button>
+    </div>
+  </div>
 </body>
 
 </html>

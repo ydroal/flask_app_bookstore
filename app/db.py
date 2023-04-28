@@ -1,4 +1,3 @@
-from datetime import datetime
 import pymysql
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
