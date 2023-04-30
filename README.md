@@ -8,6 +8,8 @@ The main purpose of this project is to practice create an application with Flask
 - Add and edit book entries for the current month
 - Display a list of new book releases
 
+![Demo](media/demo.gif)
+
 ## Technologies
 
 - Flask: A lightweight Python web framework
@@ -20,6 +22,7 @@ The main purpose of this project is to practice create an application with Flask
 
 - Python 3.6 or higher
 - Flask and SQLAlchemy
+- MySQL Server
 
 ### Installation
 
@@ -34,8 +37,20 @@ git clone https://github.com/ydroal/flask_app_bookstore.git
 
 4. Install the required packages
 
-5. Run the application  
+5. Install and configure a MySQL server, create a database, and set up a user with the necessary privileges.
+
+6. Set environment variables for database connection:
 ```
+export USER=<your_mysql_username>
+export DB_PASSWORD=<your_mysql_password>
+export HOST=<your_mysql_host>
+export DB=<your_mysql_database>
+```
+
+7. Set environment variables for Flask and run the application
+```
+export FLASK_APP=app
+export FLASK_ENV=development
 flask run
 ```
 
