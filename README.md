@@ -8,7 +8,7 @@ The main purpose of this project is to practice create an application with Flask
 - Add and edit book entries for the current month
 - Display a list of new book releases
 
-![Demo](media/demo.gif)
+![Demo](media/demo_opt.gif)
 
 ## Technologies
 
