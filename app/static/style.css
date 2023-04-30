@@ -87,3 +87,7 @@ td {
   margin: 20px 2px; 
   cursor: pointer;
 }
+
+input {
+  color: #6e8070;
+}
