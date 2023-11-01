@@ -65,5 +65,8 @@ I don't test environments under Linux and Windows.
 - [Flask](https://flask.palletsprojects.com/)
 - [SQLAlchemy](https://www.sqlalchemy.org/)
 
+## Authors
 
+**Yoko ONO**
+- GitHub: [ydroal](https://github.com/ydroal)
 
